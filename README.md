@@ -9,16 +9,16 @@ Become familiar using common iterators introduced in the previous lesson.
 
 ### Code Challenge I: Using `.each`
 
-Let's try out the enumerator methods we just learned. Refer back to the previous lesson to help you pass this challenge. 
+Let's try out the enumerator methods we just learned. Refer back to the previous lesson to help you pass this challenge.
 
 
 Below, we have a variable, `lunch_menu`, set equal to an array of lunch menu items.
 
-Since you're super hungry and super excited about lunch, use the `.each` method to enumerate over the array and append a "!" to each menu item. You can use the `<<` on each menu item string to add an "!". Like this: "pizza" << "!" 
+Since you're super hungry and super excited about lunch, use the `.each` method to enumerate over the array and append a "!" to each menu item. You can use the `<<` on each menu item string to add an "!". Like this: "pizza" << "!"
 
-~~~ruby 
+~~~ruby
 
-lunch_menu = ["pizza", "sandwhich", "sushi", "soup", "salad"]
+lunch_menu = ["pizza", "sandwich", "sushi", "soup", "salad"]
 
 #code your solution using .each here
 
@@ -30,7 +30,7 @@ end
 
 ~~~validation
 
-assert.deepEqual(response, ["pizza!", "sandwhich!", "sushi!", "soup!", "salad!"]);
+assert_match(response, ["pizza!", "sandwich!", "sushi!", "soup!", "salad!"])
 
 ~~~
 
@@ -40,7 +40,7 @@ assert.deepEqual(response, ["pizza!", "sandwhich!", "sushi!", "soup!", "salad!"]
 
 ### Code Challenge II: Using `.collect`
 
-Below we have a variable, `nums`, set equal to an array of numbers. Enumerate over the array with the `.collect` method and return a new array of the same numbers, squared. 
+Below we have a variable, `nums`, set equal to an array of numbers. Enumerate over the array with the `.collect` method and return a new array of the same numbers, squared.
 
 ~~~ruby
 
@@ -48,7 +48,7 @@ nums = [1, 2, 3, 4]
 
 #code you solution using .collect here
 
-~~~solution 
+~~~solution
 
 nums.collect do |num|
 	num * num
@@ -56,7 +56,7 @@ end
 
 ~~~validation
 
-assert.deepEqual(response, [1, 4, 9, 16]);
+assert_equal(response, [1, 4, 9, 16])
 
 ~~~
 
@@ -82,7 +82,7 @@ end
 
 ~~~validation
 
-assert.deepEqual(response, [2, 18, 10, 24]);
+assert_equal(response, [2, 18, 10, 24])
 
 ~~~
 
@@ -92,7 +92,7 @@ assert.deepEqual(response, [2, 18, 10, 24]);
 
 ### Code Challenge IV: Using `.find`
 
-Below we once again have a variable, `odds_and_evens`, set equal to an array of numbers. This time, use the `.find` method to iterate over the array and return only the *first* array element that is *odd*. 
+Below we once again have a variable, `odds_and_evens`, set equal to an array of numbers. This time, use the `.find` method to iterate over the array and return only the *first* array element that is *odd*.
 
 ~~~ruby
 
@@ -106,9 +106,9 @@ odds_and_evens.find do |num|
 	num.odd?
 end
 
-~~~validation 
+~~~validation
 
-assert.deepEqual(response, 1);
+assert_equal(response, 1)
 
 ~~~
 
@@ -118,13 +118,13 @@ assert.deepEqual(response, 1);
 
 ### Code Challenge V: Using `delete_if`
 
-Below we have a variable, `cats_and_dogs`, set equal to an array of strings that are either cats or dogs. We all know that cats and dogs don't get along. Iterate over the array and delete from it any items that are dogs. 
+Below we have a variable, `cats_and_dogs`, set equal to an array of strings that are either cats or dogs. We all know that cats and dogs don't get along. Iterate over the array and delete from it any items that are dogs.
 
 ~~~ruby
 
 cats_and_dogs = ["cat", "cat", "dog", "cat", "dog", "dog"]
 
-#code your solution using .delete_if 
+#code your solution using .delete_if
 
 ~~~solution
 
@@ -134,7 +134,7 @@ end
 
 ~~~validation
 
-assert.deepEqual(response, ["cat", "cat", "cat"]);
+assert_match(response, ["cat", "cat", "cat"])
 
 ~~~
 
@@ -144,7 +144,7 @@ assert.deepEqual(response, ["cat", "cat", "cat"]);
 
 ### Code Challenge VI: Using `include?`
 
-Below we have a variable, `famous_cats`, set equal to an array of famous cats. Use the `.include?` method to check and see if the array includes the string "Maru". 
+Below we have a variable, `famous_cats`, set equal to an array of famous cats. Use the `.include?` method to check and see if the array includes the string "Maru".
 
 ~~~ruby
 
@@ -158,7 +158,7 @@ famous_cats.include?("Maru")
 
 ~~~validation
 
-assert.deepEqual(response, true);
+assert_true(response)
 
 ~~~
 
@@ -168,7 +168,7 @@ assert.deepEqual(response, true);
 
 ### Code Challenge VII: Using `any?`
 
-Below we have a variable, `quiet_and_loud`, that is set equal to an array of strings. Use the `.any?` method to iteratore over the array to determine if any of the words contained there are loud, or upcased. 
+Below we have a variable, `quiet_and_loud`, that is set equal to an array of strings. Use the `.any?` method to iteratore over the array to determine if any of the words contained there are loud, or upcased.
 
 ~~~ruby
 
@@ -176,7 +176,7 @@ quiet_and_loud = ["hi", "HI", "shhh", "WHAT?!"]
 
 #code your solution using .any? here
 
-~~~solution 
+~~~solution
 
 quiet_and_loud.any? do |word|
 	word == word.upcase
@@ -184,7 +184,7 @@ end
 
 ~~~validation
 
-assert.deepEqual(response, true);
+assert_equal(response, true)
 
 ~~~
 
