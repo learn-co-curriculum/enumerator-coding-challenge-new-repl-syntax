@@ -4,7 +4,6 @@
 
 Become familiar using common iterators introduced in the previous lesson.
 
-
 %%%
 
 ### Code Challenge I: Using `.each`
