@@ -191,4 +191,4 @@ assert_equal(response, true)
 %%%
 
 
-<a href='https://learn.co/lessons/enumerator-coding-challenge-new-repl-syntax' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/enumerator-coding-challenge-new-repl-syntax' title='Enumerator Coding Challenge'>Enumerator Coding Challenge</a> on Learn.co and start learning to code for free.</p>
