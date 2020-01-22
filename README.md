@@ -1,4 +1,4 @@
-# Enumerator Coding Challenge
+# Enumerator Quiz
 
 ## Objectives
 
@@ -6,7 +6,7 @@ Become familiar with using common iterators introduced in the previous lesson.
 
 ???
 
-### Code Challenge I: Using `.each`
+### Using `.each`
 
 Let's try out the enumerator methods we just learned. Refer back to the previous lesson to help you pass this challenge.
 
@@ -48,7 +48,7 @@ end
 lunch_menu.each do |lunch_item|
 ```
 
-### Code Challenge II: Using `.collect`
+### Using `.collect`
 
 Below we have a variable, `nums`, set equal to an array of numbers. Enumerate over the array with the `.collect` method and return a new array of the squares of those numbers.
 
@@ -86,7 +86,7 @@ nums.collect do |n|
 end
 ```
 
-### Code Challenge III: Using `.select`
+### Using `.select`
 
 Below we have a variable, `odds_and_evens`, set equal to an array of numbers. Use the `.select` enumerator to iterate over the array and return any even numbers. This requires checking if a number is even. If you're unsure how to do that, reference the Ruby Documentation or try a google search!
 
@@ -128,7 +128,7 @@ odds_and_evens.select do |n|
 end
 ```
 
-### Code Challenge IV: Using `.find`
+### Using `.find`
 
 Below we once again have a variable, `odds_and_evens`, set equal to an array of numbers. This time, use the `.find` method to iterate over the array and return only the *first* array element that is *odd*.
 
@@ -171,7 +171,7 @@ end
 
 ```
 
-### Code Challenge V: Using `delete_if`
+### Using `delete_if`
 
 Below we have a variable, `cats_and_dogs`, set equal to an array of strings that are either a `"cat"` or a  `"dog"`. We all know that cats and dogs don't get along. Iterate over the array and delete the elements that represent dogs.
 
@@ -214,7 +214,7 @@ cats_and_dogs.delete_if do |pet|
 end
 ```
 
-### Code Challenge VI: Using `include?`
+### Using `include?`
 
 Below we have a variable, `famous_cats`, set equal to an array of famous cats. Use the `.include?` method to check and see if the array includes the string `"Maru"`.
 
@@ -242,7 +242,7 @@ famous_cats.include?
 famous_cats.include?(true)
 ```
 
-### Code Challenge VII: Using `any?`
+### Using `any?`
 
 Below we have a variable, `quiet_and_loud`, that is set equal to an array of strings. Use the `.any?` method to iterate over the array to determine if any of the words contained there are loud (upcased).
 
